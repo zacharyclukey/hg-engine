@@ -86,27 +86,27 @@ encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
 // probabilities:  30, 30, 25, 10, 5
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_LOTAD, 10, 10
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_CARVANHA, 10, 10
-encounter SPECIES_FEEBAS, 10, 10
+encounter SPECIES_MAGIKARP, 10, 10
+encounter SPECIES_MAGIKARP, 10, 10
+encounter SPECIES_MAGIKARP, 10, 10
+encounter SPECIES_TENTACOOL, 10, 10
+encounter SPECIES_TENTACOOL, 10, 10
 
 // good rod encounters
-// probabilities:  30, 30, 25, 10, 5
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_LOTAD, 10, 10
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_CARVANHA, 10, 10
-encounter SPECIES_FEEBAS, 10, 10
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_MAGIKARP, 20, 20
+encounter SPECIES_TENTACOOL, 20, 20
+encounter SPECIES_CHINCHOU, 20, 20
+encounter SPECIES_SHELLDER, 20, 20
+encounter SPECIES_CHINCHOU, 20, 20
 
 // super rod encounters
-// probabilities:  30, 30, 25, 10, 5
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_LOTAD, 10, 10
-encounter SPECIES_REMORAID, 10, 10
-encounter SPECIES_CARVANHA, 10, 10
-encounter SPECIES_FEEBAS, 10, 10
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_CHINCHOU, 40, 40
+encounter SPECIES_SHELLDER, 40, 40
+encounter SPECIES_TENTACRUEL, 40, 40
+encounter SPECIES_LANTURN, 40, 40
+encounter SPECIES_TENTACRUEL, 40, 40
 
 // swarm grass
 pokemon SPECIES_NONE
@@ -118,7 +118,6 @@ pokemon SPECIES_SHELLDER
 pokemon SPECIES_MAGIKARP
 
 .close
-
 
 
 

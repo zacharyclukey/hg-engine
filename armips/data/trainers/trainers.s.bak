@@ -267,15 +267,8 @@ trainerdata 8, "Joey"
         abilityslot 0
         level 4
         pokemon SPECIES_RATTATA
-        item ITEM_FOCUS_SASH
-        move MOVE_ENDEAVOR
-        move MOVE_QUICK_ATTACK
-        move MOVE_NONE
-        move MOVE_NONE
         ballseal 0
-
     endparty
-
 
 trainerdata 9, "Elaine"
     trainermontype TRAINER_DATA_TYPE_NOTHING
