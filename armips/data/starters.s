@@ -10,7 +10,7 @@
 // DSPRE.
 .macro STARTER_CHOICES
     .word SPECIES_CHIKORITA
-    .word SPECIES_TORCHIC
+    .word SPECIES_CYNDAQUIL
     .word SPECIES_TOTODILE
 .endmacro
 
