@@ -27,9 +27,9 @@
 // HIDDEN_ABILITIES defines whether or not Pokémon with their hidden ability bit set will receive their hidden abilities when being generated/changing form in battle.
 // commenting this line out essentially disables hidden abilities to maintain default behavior, while leaving this as-is will introduce hidden abilities and all of their handling.
 // just need to set the HIDDEN_ABILITIES_FLAG from the save and then every mon should be generated with its hidden ability until the flag is cleared from another script
-//#define HIDDEN_ABILITIES
-//#define HIDDEN_ABILITIES_FLAG 2600
-//#define HIDDEN_ABILITIES_STARTERS_FLAG 2601
+#define HIDDEN_ABILITIES
+#define HIDDEN_ABILITIES_FLAG 2600
+#define HIDDEN_ABILITIES_STARTERS_FLAG 2601
 
 // MEGA_EVOLUTIONS defines whether or not Pokémon that are able to mega evolve will be able to do so.
 // commenting this line out essentially disables mega evolutions and maintains default behavior with respect to them.  leaving this as-is will introduce mega evolutions when applied to the game.
@@ -74,10 +74,10 @@
 // uncommenting IMPLEMENT_LEVEL_CAP enables the level cap system.  make sure to also uncomment LEVEL_CAP_VARIABLE in the process
 // uncommenting UNCAP_CANDIES_FROM_LEVEL_CAP will allow for rare candies to not be capped by the level cap even with the level cap in place, like run & bun
 // uncommenting ALLOW_LEVEL_CAP_EVOLVE will allow for rare candies to evolve pokemon already at the level cap that can evolve at that level already
-#define IMPLEMENT_LEVEL_CAP
-#define LEVEL_CAP_VARIABLE 0x416F
+//#define IMPLEMENT_LEVEL_CAP
+//#define LEVEL_CAP_VARIABLE 0x416F
 //#define UNCAP_CANDIES_FROM_LEVEL_CAP
-#define ALLOW_LEVEL_CAP_EVOLVE
+//#define ALLOW_LEVEL_CAP_EVOLVE
 
 // System flags that need to be enabled for the player to use the gimmick. If you want to change them, remember to change them in flags.s as well for consistency
 #define FLAG_MEGA_EVOLUTION_ENABLED 2518
@@ -124,7 +124,7 @@
 
 // Friendship grants additional bonuses.
 // Comment out the line below to revert back to Gen 5- behaviour
-//#define FRIENDSHIP_EFFECTS
+#define FRIENDSHIP_EFFECTS
 
 // RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle (Gen 9)
 // comment out the line below to revert back to Gen 8- behavior
@@ -150,13 +150,13 @@
 #define IMPLEMENT_REUSABLE_REPELS
 
 // UPDATE_VITAMIN_EV_CAPS changes the cap on the vitamins from 100 to 252 per recent generations
-//#define UPDATE_VITAMIN_EV_CAPS
+#define UPDATE_VITAMIN_EV_CAPS
 
 // DISABLE_ITEMS_IN_TRAINER_BATTLE will disable the usage of items in trainer battles. This is also true for the AI.
-#define DISABLE_ITEMS_IN_TRAINER_BATTLE
+//#define DISABLE_ITEMS_IN_TRAINER_BATTLE
 
 // REUSABLE_TMS will make TMs infinite and hide the quantity number.
-//#define REUSABLE_TMS
+#define REUSABLE_TMS
 
 // STATIC_HP_BAR updates the HP bar to increase/decrease at a fixed rate like later generations
 #define STATIC_HP_BAR
