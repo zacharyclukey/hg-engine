@@ -37,7 +37,7 @@ mondata SPECIES_NONE, "-----"
 
 mondata SPECIES_BULBASAUR, "Bulbasaur"
     basestats 45, 49, 49, 45, 65, 65
-    types Grass, Poison
+    types TYPE_GRASS, TYPE_POISON
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 0
@@ -45,8 +45,8 @@ mondata SPECIES_BULBASAUR, "Bulbasaur"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -59,7 +59,7 @@ mondata SPECIES_BULBASAUR, "Bulbasaur"
 
 mondata SPECIES_IVYSAUR, "Ivysaur"
     basestats 60, 62, 63, 60, 80, 80
-    types Grass, Poison
+    types TYPE_GRASS, TYPE_POISON
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 1
@@ -67,8 +67,8 @@ mondata SPECIES_IVYSAUR, "Ivysaur"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -81,7 +81,7 @@ mondata SPECIES_IVYSAUR, "Ivysaur"
 
 mondata SPECIES_VENUSAUR, "Venusaur"
     basestats 80, 82, 83, 80, 100, 100
-    types Grass, Poison
+    types TYPE_GRASS, TYPE_POISON
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 2, 1
@@ -90,7 +90,7 @@ mondata SPECIES_VENUSAUR, "Venusaur"
     eggcycles 20
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
-    egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -3211,7 +3211,7 @@ mondata SPECIES_MEW, "Mew"
 
 mondata SPECIES_CHIKORITA, "Chikorita"
     basestats 45, 49, 65, 45, 49, 65
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 0, 1
@@ -3219,8 +3219,8 @@ mondata SPECIES_CHIKORITA, "Chikorita"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -3233,7 +3233,7 @@ mondata SPECIES_CHIKORITA, "Chikorita"
 
 mondata SPECIES_BAYLEEF, "Bayleef"
     basestats 60, 62, 80, 60, 63, 80
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 1, 0, 0, 1
@@ -3241,8 +3241,8 @@ mondata SPECIES_BAYLEEF, "Bayleef"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -3255,7 +3255,7 @@ mondata SPECIES_BAYLEEF, "Bayleef"
 
 mondata SPECIES_MEGANIUM, "Meganium"
     basestats 80, 82, 100, 80, 83, 100
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 1, 0, 0, 2
@@ -3263,8 +3263,8 @@ mondata SPECIES_MEGANIUM, "Meganium"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -3340,7 +3340,7 @@ mondata SPECIES_TYPHLOSION, "Typhlosion"
 
 mondata SPECIES_TOTODILE, "Totodile"
     basestats 50, 65, 64, 43, 44, 48
-    types Water, Water
+    types TYPE_WATER, TYPE_WATER
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 0, 0
@@ -3348,8 +3348,8 @@ mondata SPECIES_TOTODILE, "Totodile"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Water 1
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
@@ -3362,7 +3362,7 @@ mondata SPECIES_TOTODILE, "Totodile"
 
 mondata SPECIES_CROCONAW, "Croconaw"
     basestats 65, 80, 80, 58, 59, 63
-    types Water, Water
+    types TYPE_WATER, TYPE_WATER
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 1, 0, 0, 0
@@ -3370,8 +3370,8 @@ mondata SPECIES_CROCONAW, "Croconaw"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Water 1
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
@@ -3384,7 +3384,7 @@ mondata SPECIES_CROCONAW, "Croconaw"
 
 mondata SPECIES_FERALIGATR, "Feraligatr"
     basestats 85, 105, 100, 78, 79, 83
-    types Water, Water
+    types TYPE_WATER, TYPE_WATER
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 2, 1, 0, 0, 0
@@ -3392,8 +3392,8 @@ mondata SPECIES_FERALIGATR, "Feraligatr"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Water 1
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
@@ -3448,7 +3448,7 @@ mondata SPECIES_FURRET, "Furret"
 
 mondata SPECIES_HOOTHOOT, "Hoothoot"
     basestats 60, 30, 30, 50, 36, 56
-    types Normal, Flying
+    types TYPE_NORMAL, TYPE_FLYING
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 1, 0, 0, 0, 0, 0
@@ -3456,8 +3456,8 @@ mondata SPECIES_HOOTHOOT, "Hoothoot"
     genderratio 127
     eggcycles 15
     basefriendship 50
-    growthrate Medium Fast
-    egggroups Flying, Flying
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
     abilities ABILITY_INSOMNIA, ABILITY_TINTED_LENS
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
@@ -5381,7 +5381,7 @@ mondata SPECIES_SCEPTILE, "Sceptile"
 
 mondata SPECIES_TORCHIC, "Torchic"
     basestats 45, 60, 40, 45, 70, 50
-    types Fire, Fire
+    types TYPE_FIRE, TYPE_FIRE
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 0
@@ -5389,8 +5389,8 @@ mondata SPECIES_TORCHIC, "Torchic"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Field
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
@@ -5403,7 +5403,7 @@ mondata SPECIES_TORCHIC, "Torchic"
 
 mondata SPECIES_COMBUSKEN, "Combusken"
     basestats 60, 85, 60, 55, 85, 60
-    types Fire, Fighting
+    types TYPE_FIRE, TYPE_FIGHTING
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 1, 0
@@ -5411,8 +5411,8 @@ mondata SPECIES_COMBUSKEN, "Combusken"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Field
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
@@ -5425,7 +5425,7 @@ mondata SPECIES_COMBUSKEN, "Combusken"
 
 mondata SPECIES_BLAZIKEN, "Blaziken"
     basestats 80, 120, 70, 80, 110, 70
-    types Fire, Fighting
+    types TYPE_FIRE, TYPE_FIGHTING
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 3, 0, 0, 0, 0
@@ -5433,8 +5433,8 @@ mondata SPECIES_BLAZIKEN, "Blaziken"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Field
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
@@ -8156,7 +8156,7 @@ mondata SPECIES_DEOXYS, "Deoxys"
 
 mondata SPECIES_TURTWIG, "Turtwig"
     basestats 55, 68, 64, 31, 45, 55
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 0, 0
@@ -8164,8 +8164,8 @@ mondata SPECIES_TURTWIG, "Turtwig"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -8178,7 +8178,7 @@ mondata SPECIES_TURTWIG, "Turtwig"
 
 mondata SPECIES_GROTLE, "Grotle"
     basestats 75, 89, 85, 36, 55, 65
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 1, 0, 0, 0
@@ -8186,8 +8186,8 @@ mondata SPECIES_GROTLE, "Grotle"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -8200,7 +8200,7 @@ mondata SPECIES_GROTLE, "Grotle"
 
 mondata SPECIES_TORTERRA, "Torterra"
     basestats 95, 109, 105, 56, 75, 85
-    types Grass, Ground
+    types TYPE_GRASS, TYPE_GROUND
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 2, 1, 0, 0, 0
@@ -8208,8 +8208,8 @@ mondata SPECIES_TORTERRA, "Torterra"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate Medium Slow
-    egggroups Monster, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
     abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -14963,7 +14963,7 @@ mondata SPECIES_DIGGERSBY, "Diggersby"
 
 mondata SPECIES_FLETCHLING, "Fletchling"
     basestats 45, 50, 43, 62, 40, 38
-    types Normal, Flying
+    types TYPE_NORMAL, TYPE_FLYING
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 1, 0, 0
@@ -20109,7 +20109,7 @@ mondata SPECIES_ENAMORUS, "Enamorus"
 
 mondata SPECIES_SPRIGATITO, "Sprigatito"
     basestats 40, 61, 54, 65, 45, 45
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 1, 0, 0
@@ -20117,8 +20117,8 @@ mondata SPECIES_SPRIGATITO, "Sprigatito"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
     abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -20131,7 +20131,7 @@ mondata SPECIES_SPRIGATITO, "Sprigatito"
 
 mondata SPECIES_FLORAGATO, "Floragato"
     basestats 61, 80, 63, 83, 60, 63
-    types Grass, Grass
+    types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 2, 0, 0
@@ -20139,8 +20139,8 @@ mondata SPECIES_FLORAGATO, "Floragato"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
     abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
@@ -20153,7 +20153,7 @@ mondata SPECIES_FLORAGATO, "Floragato"
 
 mondata SPECIES_MEOWSCARADA, "Mewscarada"
     basestats 76, 110, 70, 123, 81, 70
-    types Grass, Dark
+    types TYPE_GRASS, TYPE_DARK
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 3, 0, 0
@@ -20161,8 +20161,8 @@ mondata SPECIES_MEOWSCARADA, "Mewscarada"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate Medium Slow
-    egggroups Field, Grass
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
     abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
