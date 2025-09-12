@@ -72,7 +72,7 @@ pokemon SPECIES_NONE
 pokemon SPECIES_NONE
 
 // surf encounters
-// probabilities:  30, 30, 25, 10, 5
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_BLASTOISE, 34, 36
 encounter SPECIES_SAMUROTT, 34, 36
 encounter SPECIES_EMPOLEON, 34, 36
@@ -85,28 +85,28 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
-// probabilities:  30, 30, 25, 10, 5
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_TENTACOOL, 10, 10
-encounter SPECIES_TENTACOOL, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_LOTAD, 3, 5
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_CARVANHA, 3, 5
+encounter SPECIES_FEEBAS, 3, 5
 
 // good rod encounters
 // probabilities:  40, 40, 15, 4, 1
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_TENTACOOL, 20, 20
-encounter SPECIES_CHINCHOU, 20, 20
-encounter SPECIES_SHELLDER, 20, 20
-encounter SPECIES_CHINCHOU, 20, 20
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_LOTAD, 3, 5
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_CARVANHA, 3, 5
+encounter SPECIES_FEEBAS, 3, 5
 
 // super rod encounters
 // probabilities:  40, 40, 15, 4, 1
-encounter SPECIES_CHINCHOU, 40, 40
-encounter SPECIES_SHELLDER, 40, 40
-encounter SPECIES_TENTACRUEL, 40, 40
-encounter SPECIES_LANTURN, 40, 40
-encounter SPECIES_TENTACRUEL, 40, 40
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_LOTAD, 3, 5
+encounter SPECIES_REMORAID, 3, 5
+encounter SPECIES_CARVANHA, 3, 5
+encounter SPECIES_FEEBAS, 3, 5
 
 // swarm grass
 pokemon SPECIES_NONE
@@ -127,67 +127,73 @@ pokemon SPECIES_MAGIKARP
 
 
 
+
+
 encounterdata   1   // Route 29
 
 walkrate 25
 surfrate 0
 rocksmashrate 0
-oldrodrate 0
-goodrodrate 0
-superrodrate 0
-walklevels 2, 3, 2, 3, 3, 3, 2, 2, 4, 4, 4, 4
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
+walklevels 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
 pokemon SPECIES_SENTRET
 pokemon SPECIES_RATTATA
+pokemon SPECIES_EEVEE
+pokemon SPECIES_TAILLOW
 pokemon SPECIES_PIDGEY
-pokemon SPECIES_RATTATA
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_SENTRET
+monwithform SPECIES_ZIGZAGOON, 1
+pokemon SPECIES_KECLEON
+pokemon SPECIES_SENTRET
+pokemon SPECIES_TAILLOW
+monwithform SPECIES_ZIGZAGOON, 1
 
 // day encounter slots
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_SENTRET
 pokemon SPECIES_SENTRET
 pokemon SPECIES_RATTATA
+pokemon SPECIES_EEVEE
+pokemon SPECIES_TAILLOW
 pokemon SPECIES_PIDGEY
-pokemon SPECIES_RATTATA
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_SENTRET
+monwithform SPECIES_ZIGZAGOON, 1
+pokemon SPECIES_KECLEON
+pokemon SPECIES_SENTRET
+pokemon SPECIES_TAILLOW
+monwithform SPECIES_ZIGZAGOON, 1
 
 // night encounter slots
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_SENTRET
 pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_RATTATA
-pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_EEVEE
+pokemon SPECIES_TAILLOW
+pokemon SPECIES_PIDGEY
+pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_SENTRET
+monwithform SPECIES_ZIGZAGOON, 1
+pokemon SPECIES_KECLEON
+pokemon SPECIES_SENTRET
+pokemon SPECIES_TAILLOW
+monwithform SPECIES_ZIGZAGOON, 1
 
 // hoenn encounter slots
-pokemon SPECIES_PLUSLE
-pokemon SPECIES_MINUN
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // sinnoh encounter slots
-pokemon SPECIES_SHINX
-pokemon SPECIES_SHINX
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // surf encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -195,10 +201,12 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -206,6 +214,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // good rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -213,6 +222,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // super rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -231,15 +241,19 @@ pokemon SPECIES_NONE
 .close
 
 
+
 encounterdata   2   // Cherrygrove City
 
 walkrate 0
 surfrate 15
 rocksmashrate 0
-oldrodrate 25
-goodrodrate 50
-superrodrate 75
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
 walklevels 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
 pokemon SPECIES_NONE
@@ -292,36 +306,41 @@ pokemon SPECIES_NONE
 pokemon SPECIES_NONE
 
 // surf encounters
-encounter SPECIES_TENTACOOL, 15, 25
-encounter SPECIES_TENTACOOL, 10, 20
-encounter SPECIES_TENTACRUEL, 15, 25
-encounter SPECIES_TENTACRUEL, 15, 25
-encounter SPECIES_TENTACRUEL, 15, 25
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_GRENINJA, 36, 36
+encounter SPECIES_INTELEON, 36, 36
+encounter SPECIES_SWAMPERT, 36, 36
+encounter SPECIES_ARCTOVISH, 36, 36
+encounter SPECIES_PRIMARINA, 36, 36
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_KRABBY, 10, 10
-encounter SPECIES_KRABBY, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_PSYDUCK, 4, 6
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // good rod encounters
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_KRABBY, 20, 20
-encounter SPECIES_KRABBY, 20, 20
-encounter SPECIES_CORSOLA, 20, 20
-encounter SPECIES_KRABBY, 20, 20
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_PSYDUCK, 4, 6
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // super rod encounters
-encounter SPECIES_KRABBY, 40, 40
-encounter SPECIES_CORSOLA, 40, 40
-encounter SPECIES_KRABBY, 40, 40
-encounter SPECIES_KINGLER, 40, 40
-encounter SPECIES_KRABBY, 40, 40
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_PSYDUCK, 4, 6
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // swarm grass
 pokemon SPECIES_NONE
@@ -335,57 +354,61 @@ pokemon SPECIES_MAGIKARP
 .close
 
 
+
 encounterdata   3   // Route 30
 
 walkrate 25
 surfrate 15
 rocksmashrate 0
-oldrodrate 25
-goodrodrate 50
-superrodrate 75
-walklevels 2, 3, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
+walklevels 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
-pokemon SPECIES_METAPOD
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_SQUAWKABILLY
+pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_WINGULL
+pokemon SPECIES_TAILLOW
+pokemon SPECIES_MANTYKE
+pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_WATTREL
+pokemon SPECIES_NATU
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_NATU
+pokemon SPECIES_CLEFFA
 
 // day encounter slots
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_PIDGEY
-pokemon SPECIES_METAPOD
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
+pokemon SPECIES_SQUAWKABILLY
+pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_WINGULL
+pokemon SPECIES_TAILLOW
+pokemon SPECIES_MANTYKE
+pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_WATTREL
+pokemon SPECIES_NATU
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_NATU
+pokemon SPECIES_CLEFFA
 
 // night encounter slots
-pokemon SPECIES_SPINARAK
-pokemon SPECIES_RATTATA
-pokemon SPECIES_SPINARAK
-pokemon SPECIES_RATTATA
+pokemon SPECIES_SQUAWKABILLY
 pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_WINGULL
+pokemon SPECIES_TAILLOW
+pokemon SPECIES_MANTYKE
 pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_WATTREL
+pokemon SPECIES_NATU
+pokemon SPECIES_TYROGUE
+pokemon SPECIES_NATU
+pokemon SPECIES_CLEFFA
 
 // hoenn encounter slots
 pokemon SPECIES_WHISMUR
@@ -396,36 +419,41 @@ pokemon SPECIES_BUIZEL
 pokemon SPECIES_BIDOOF
 
 // surf encounters
-encounter SPECIES_POLIWAG, 15, 25
-encounter SPECIES_POLIWAG, 10, 20
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 32, 32
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_CARVANHA, 4, 6
+encounter SPECIES_SKRELP, 4, 6
+encounter SPECIES_CHEWTLE, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_CARVANHA, 4, 6
+encounter SPECIES_SKRELP, 4, 6
+encounter SPECIES_CHEWTLE, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // good rod encounters
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_CARVANHA, 4, 6
+encounter SPECIES_SKRELP, 4, 6
+encounter SPECIES_CHEWTLE, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // super rod encounters
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_HORSEA, 4, 6
+encounter SPECIES_CARVANHA, 4, 6
+encounter SPECIES_SKRELP, 4, 6
+encounter SPECIES_CHEWTLE, 4, 6
+encounter SPECIES_BINACLE, 4, 6
 
 // swarm grass
 pokemon SPECIES_PIDGEY
@@ -437,6 +465,7 @@ pokemon SPECIES_POLIWAG
 pokemon SPECIES_MAGIKARP
 
 .close
+
 
 
 encounterdata   4   // Route 31
@@ -444,92 +473,102 @@ encounterdata   4   // Route 31
 walkrate 25
 surfrate 15
 rocksmashrate 0
-oldrodrate 25
-goodrodrate 50
-superrodrate 75
-walklevels 3, 4, 3, 4, 3, 3, 5, 5, 5, 5, 5, 5
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
+walklevels 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 5
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_WURMPLE
+pokemon SPECIES_WEEDLE
 pokemon SPECIES_CATERPIE
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_PINECO
 pokemon SPECIES_CATERPIE
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_METAPOD
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_VENIPEDE
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_SNOM
+pokemon SPECIES_SNOM
+pokemon SPECIES_BURMY
 
 // day encounter slots
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_WURMPLE
+pokemon SPECIES_WEEDLE
 pokemon SPECIES_CATERPIE
-pokemon SPECIES_PIDGEY
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_PINECO
 pokemon SPECIES_CATERPIE
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_METAPOD
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
-pokemon SPECIES_CATERPIE
-pokemon SPECIES_METAPOD
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_VENIPEDE
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_SNOM
+pokemon SPECIES_SNOM
+pokemon SPECIES_BURMY
 
 // night encounter slots
-pokemon SPECIES_SPINARAK
-pokemon SPECIES_RATTATA
-pokemon SPECIES_SPINARAK
-pokemon SPECIES_RATTATA
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_BELLSPROUT
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
-pokemon SPECIES_HOOTHOOT
+pokemon SPECIES_WURMPLE
+pokemon SPECIES_WEEDLE
+pokemon SPECIES_CATERPIE
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_PINECO
+pokemon SPECIES_CATERPIE
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_VENIPEDE
+pokemon SPECIES_SCATTERBUG
+pokemon SPECIES_SNOM
+pokemon SPECIES_SNOM
+pokemon SPECIES_BURMY
 
 // hoenn encounter slots
-pokemon SPECIES_WHISMUR
-pokemon SPECIES_LINOONE
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // sinnoh encounter slots
-pokemon SPECIES_BUIZEL
+pokemon SPECIES_NONE
 pokemon SPECIES_BIDOOF
 
 // surf encounters
-encounter SPECIES_POLIWAG, 15, 25
-encounter SPECIES_POLIWAG, 10, 20
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 32, 32
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_WINGULL, 4, 6
+encounter SPECIES_BARBOACH, 4, 6
+encounter SPECIES_DEWPIDER, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_WINGULL, 4, 6
+encounter SPECIES_BARBOACH, 4, 6
+encounter SPECIES_DEWPIDER, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
+
 
 // good rod encounters
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_WINGULL, 4, 6
+encounter SPECIES_BARBOACH, 4, 6
+encounter SPECIES_DEWPIDER, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
 
 // super rod encounters
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_SURSKIT, 4, 6
+encounter SPECIES_WINGULL, 4, 6
+encounter SPECIES_BARBOACH, 4, 6
+encounter SPECIES_DEWPIDER, 4, 6
+encounter SPECIES_SPHEAL, 4, 6
+
 
 // swarm grass
 pokemon SPECIES_PIDGEY
@@ -543,15 +582,19 @@ pokemon SPECIES_MAGIKARP
 .close
 
 
+
 encounterdata   5   // Violet City
 
 walkrate 0
 surfrate 15
 rocksmashrate 0
-oldrodrate 25
-goodrodrate 50
-superrodrate 75
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
 walklevels 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
 pokemon SPECIES_NONE
@@ -604,36 +647,41 @@ pokemon SPECIES_NONE
 pokemon SPECIES_NONE
 
 // surf encounters
-encounter SPECIES_POLIWAG, 15, 25
-encounter SPECIES_POLIWAG, 10, 20
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 15, 25
-encounter SPECIES_POLIWHIRL, 15, 25
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_POLIWAG, 7, 10
+encounter SPECIES_REMORAID, 7, 10
+encounter SPECIES_ARROKUDA, 7, 10
+encounter SPECIES_LOTAD, 7, 10
+encounter SPECIES_CHINCHOU, 7, 10
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
-encounter SPECIES_POLIWAG, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_POLIWAG, 7, 10
+encounter SPECIES_REMORAID, 7, 10
+encounter SPECIES_ARROKUDA, 7, 10
+encounter SPECIES_LOTAD, 7, 10
+encounter SPECIES_CHINCHOU, 7, 10
 
 // good rod encounters
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
-encounter SPECIES_POLIWAG, 20, 20
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_POLIWAG, 7, 10
+encounter SPECIES_REMORAID, 7, 10
+encounter SPECIES_ARROKUDA, 7, 10
+encounter SPECIES_LOTAD, 7, 10
+encounter SPECIES_CHINCHOU, 7, 10
 
 // super rod encounters
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
-encounter SPECIES_POLIWAG, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_POLIWAG, 7, 10
+encounter SPECIES_REMORAID, 7, 10
+encounter SPECIES_ARROKUDA, 7, 10
+encounter SPECIES_LOTAD, 7, 10
+encounter SPECIES_CHINCHOU, 7, 10
 
 // swarm grass
 pokemon SPECIES_NONE
@@ -647,6 +695,7 @@ pokemon SPECIES_WHISCASH
 .close
 
 
+
 encounterdata   6   // Sprout Tower 2F
 
 walkrate 5
@@ -655,59 +704,63 @@ rocksmashrate 0
 oldrodrate 0
 goodrodrate 0
 superrodrate 0
-walklevels 3, 4, 3, 4, 5, 5, 3, 3, 6, 5, 6, 5
+walklevels 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_ODDISH
+pokemon SPECIES_ODDISH
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_SMOLIV
+pokemon SPECIES_GOSSIFLEUR
+pokemon SPECIES_HOPPIP
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_FERROSEED
+pokemon SPECIES_APPLIN
+pokemon SPECIES_FERROSEED
+pokemon SPECIES_GASTLY
 
 // day encounter slots
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_ODDISH
+pokemon SPECIES_ODDISH
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_SMOLIV
+pokemon SPECIES_GOSSIFLEUR
+pokemon SPECIES_HOPPIP
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_FERROSEED
+pokemon SPECIES_APPLIN
+pokemon SPECIES_FERROSEED
+pokemon SPECIES_GASTLY
 
 // night encounter slots
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_ODDISH
+pokemon SPECIES_ODDISH
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_SMOLIV
+pokemon SPECIES_GOSSIFLEUR
+pokemon SPECIES_HOPPIP
+pokemon SPECIES_BELLSPROUT
+pokemon SPECIES_FERROSEED
+pokemon SPECIES_APPLIN
+pokemon SPECIES_FERROSEED
 pokemon SPECIES_GASTLY
-pokemon SPECIES_GASTLY
-pokemon SPECIES_GASTLY
-pokemon SPECIES_GASTLY
-pokemon SPECIES_GASTLY
-pokemon SPECIES_GASTLY
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GASTLY
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GASTLY
-pokemon SPECIES_RATTATA
 
 // hoenn encounter slots
-pokemon SPECIES_ZIGZAGOON
-pokemon SPECIES_SPINDA
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // sinnoh encounter slots
-pokemon SPECIES_CHATOT
-pokemon SPECIES_MEDITITE
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // surf encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -715,10 +768,12 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -726,6 +781,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // good rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -733,6 +789,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // super rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -749,6 +806,8 @@ pokemon SPECIES_NONE
 pokemon SPECIES_NONE
 
 .close
+
+
 
 
 encounterdata   7   // Sprout Tower 3F
@@ -7095,7 +7154,7 @@ pokemon SPECIES_MAGIKARP
 .close
 
 
-encounterdata  68   // Route 46
+encounterdata   68   // Route 46
 
 walkrate 25
 surfrate 0
@@ -7103,59 +7162,63 @@ rocksmashrate 0
 oldrodrate 0
 goodrodrate 0
 superrodrate 0
-walklevels 3, 2, 3, 2, 2, 2, 2, 2, 3, 4, 3, 4
+walklevels 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_NUMEL
+pokemon SPECIES_GROWLITHE
+pokemon SPECIES_VULPIX
+pokemon SPECIES_DARUMAKA
+pokemon SPECIES_FLETCHLING
+pokemon SPECIES_NUMEL
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_VULPIX
+pokemon SPECIES_MAGBY
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_FLETCHLING
 
 // day encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
-pokemon SPECIES_SPEAROW
-pokemon SPECIES_RATTATA
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_NUMEL
+pokemon SPECIES_GROWLITHE
+pokemon SPECIES_VULPIX
+pokemon SPECIES_DARUMAKA
+pokemon SPECIES_FLETCHLING
+pokemon SPECIES_NUMEL
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_VULPIX
+pokemon SPECIES_MAGBY
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_FLETCHLING
 
 // night encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_RATTATA
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_RATTATA
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_NUMEL
+pokemon SPECIES_GROWLITHE
+pokemon SPECIES_VULPIX
+pokemon SPECIES_DARUMAKA
+pokemon SPECIES_FLETCHLING
+pokemon SPECIES_NUMEL
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_VULPIX
+pokemon SPECIES_MAGBY
+pokemon SPECIES_SLUGMA
+pokemon SPECIES_FLETCHLING
 
 // hoenn encounter slots
-pokemon SPECIES_PLUSLE
-pokemon SPECIES_MINUN
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // sinnoh encounter slots
-pokemon SPECIES_SHINX
-pokemon SPECIES_SHINX
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // surf encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -7163,10 +7226,12 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // rock smash encounters
+// probabilities:  90, 10
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // old rod encounters
+// probabilities:  60, 30, 5, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -7174,6 +7239,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // good rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -7181,6 +7247,7 @@ encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 
 // super rod encounters
+// probabilities:  40, 40, 15, 4, 1
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
 encounter SPECIES_NONE, 0, 0
@@ -7199,97 +7266,106 @@ pokemon SPECIES_NONE
 .close
 
 
-encounterdata  69   // Dark Cave (Route 31 entrance)
+
+encounterdata   69   // Dark Cave (Route 31 entrance)
 
 walkrate 10
 surfrate 10
 rocksmashrate 50
-oldrodrate 25
-goodrodrate 50
-superrodrate 75
-walklevels 3, 2, 3, 2, 2, 2, 4, 4, 3, 4, 3, 4
+oldrodrate 100
+goodrodrate 100
+superrodrate 100
+walklevels 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+// walklevels specifies the levels of each slot.  each slot gets its own individual level without a range, which is different compared to the encounter format of later entries.
+// replace "pokemon SPECIES_*" with "monwithform SPECIES_*, formid" to get the specific form of a pokemon.  if i want a galarian darumaka, i'd put "monwithform SPECIES_DARUMAKA, 1"
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_PHANPY
+pokemon SPECIES_NACLI
+pokemon SPECIES_NACLI
+pokemon SPECIES_TRAPINCH
+pokemon SPECIES_LARVITAR
+pokemon SPECIES_PHANPY
+pokemon SPECIES_SWINUB
+pokemon SPECIES_GIBLE
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
 
 // day encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_PHANPY
+pokemon SPECIES_NACLI
+pokemon SPECIES_NACLI
+pokemon SPECIES_TRAPINCH
+pokemon SPECIES_LARVITAR
+pokemon SPECIES_PHANPY
+pokemon SPECIES_SWINUB
+pokemon SPECIES_GIBLE
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
 
 // night encounter slots
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_GEODUDE
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_ZUBAT
-pokemon SPECIES_DUNSPARCE
+pokemon SPECIES_PHANPY
+pokemon SPECIES_NACLI
+pokemon SPECIES_NACLI
+pokemon SPECIES_TRAPINCH
+pokemon SPECIES_LARVITAR
+pokemon SPECIES_PHANPY
+pokemon SPECIES_SWINUB
+pokemon SPECIES_GIBLE
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
+pokemon SPECIES_TINKATINK
+pokemon SPECIES_ARON
 
 // hoenn encounter slots
-pokemon SPECIES_ABSOL
-pokemon SPECIES_MAKUHITA
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // sinnoh encounter slots
-pokemon SPECIES_BRONZOR
-pokemon SPECIES_CHINGLING
+pokemon SPECIES_NONE
+pokemon SPECIES_NONE
 
 // surf encounters
-encounter SPECIES_MAGIKARP, 10, 20
-encounter SPECIES_MAGIKARP, 5, 15
-encounter SPECIES_MAGIKARP, 2, 10
-encounter SPECIES_MAGIKARP, 2, 10
-encounter SPECIES_MAGIKARP, 2, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_BARBOACH, 5, 8
+encounter SPECIES_CHEWTLE, 5, 8
+encounter SPECIES_SPHEAL, 5, 8
+encounter SPECIES_TIRTOUGA, 5, 8
+encounter SPECIES_BINACLE, 5, 8
 
 // rock smash encounters
-encounter SPECIES_DUNSPARCE, 4, 8
-encounter SPECIES_GEODUDE, 8, 14
+// probabilities:  90, 10
+encounter SPECIES_CUFANT, 4, 8
+encounter SPECIES_SHIELDON, 5, 9
 
 // old rod encounters
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_GOLDEEN, 10, 10
-encounter SPECIES_GOLDEEN, 10, 10
+// probabilities:  60, 30, 5, 4, 1
+encounter SPECIES_BARBOACH, 5, 8
+encounter SPECIES_CHEWTLE, 5, 8
+encounter SPECIES_SPHEAL, 5, 8
+encounter SPECIES_TIRTOUGA, 5, 8
+encounter SPECIES_BINACLE, 5, 8
 
 // good rod encounters
-encounter SPECIES_MAGIKARP, 20, 20
-encounter SPECIES_GOLDEEN, 20, 20
-encounter SPECIES_GOLDEEN, 20, 20
-encounter SPECIES_GOLDEEN, 20, 20
-encounter SPECIES_GOLDEEN, 20, 20
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_BARBOACH, 5, 8
+encounter SPECIES_CHEWTLE, 5, 8
+encounter SPECIES_SPHEAL, 5, 8
+encounter SPECIES_TIRTOUGA, 5, 8
+encounter SPECIES_BINACLE, 5, 8
 
 // super rod encounters
-encounter SPECIES_GOLDEEN, 40, 40
-encounter SPECIES_GOLDEEN, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
-encounter SPECIES_SEAKING, 40, 40
-encounter SPECIES_MAGIKARP, 40, 40
+// probabilities:  40, 40, 15, 4, 1
+encounter SPECIES_BARBOACH, 5, 8
+encounter SPECIES_CHEWTLE, 5, 8
+encounter SPECIES_SPHEAL, 5, 8
+encounter SPECIES_TIRTOUGA, 5, 8
+encounter SPECIES_BINACLE, 5, 8
 
 // swarm grass
 pokemon SPECIES_DUNSPARCE
@@ -7301,6 +7377,7 @@ pokemon SPECIES_GOLDEEN
 pokemon SPECIES_MAGIKARP
 
 .close
+
 
 
 encounterdata  70   // Dark Cave (Route 45 entrance)

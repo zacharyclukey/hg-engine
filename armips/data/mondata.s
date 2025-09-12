@@ -37,7 +37,7 @@ mondata SPECIES_NONE, "-----"
 
 mondata SPECIES_BULBASAUR, "Bulbasaur"
     basestats 45, 49, 49, 45, 65, 65
-    types TYPE_GRASS, TYPE_POISON
+    types Grass, Poison
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 0
@@ -45,20 +45,21 @@ mondata SPECIES_BULBASAUR, "Bulbasaur"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Monster, Grass
     abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_BULBASAUR, "The seed on its back is filled\nwith nutrients. The seed grows\nsteadily larger as its body grows."
     mondexclassification SPECIES_BULBASAUR, "Seed Pokémon"
+    mondexentry SPECIES_BULBASAUR, "The seed on its back is filled\nwith nutrients. The seed grows\nsteadily larger as its body grows."
     mondexheight SPECIES_BULBASAUR, "2’04”"
     mondexweight SPECIES_BULBASAUR, "15.2 lbs."
 
 
+
 mondata SPECIES_IVYSAUR, "Ivysaur"
     basestats 60, 62, 63, 60, 80, 80
-    types TYPE_GRASS, TYPE_POISON
+    types Grass, Poison
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 1
@@ -66,20 +67,21 @@ mondata SPECIES_IVYSAUR, "Ivysaur"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate Medium Slow
+    egggroups Monster, Grass
+    abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_IVYSAUR, "Exposure to sunlight adds to its\nstrength. Sunlight also makes the\nbud on its back grow larger."
     mondexclassification SPECIES_IVYSAUR, "Seed Pokémon"
+    mondexentry SPECIES_IVYSAUR, "Exposure to sunlight adds to its\nstrength. Sunlight also makes the\nbud on its back grow larger."
     mondexheight SPECIES_IVYSAUR, "3’03”"
     mondexweight SPECIES_IVYSAUR, "28.7 lbs."
 
 
+
 mondata SPECIES_VENUSAUR, "Venusaur"
     basestats 80, 82, 83, 80, 100, 100
-    types TYPE_GRASS, TYPE_POISON
+    types Grass, Poison
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 2, 1
@@ -87,15 +89,16 @@ mondata SPECIES_VENUSAUR, "Venusaur"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
+    abilities ABILITY_CHLOROPHYLL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_VENUSAUR, "By spreading the broad petals of\nits flower and catching the sun’s\nrays, it fills its body with power."
     mondexclassification SPECIES_VENUSAUR, "Seed Pokémon"
+    mondexentry SPECIES_VENUSAUR, "By spreading the broad petals of\nits flower and catching the sun’s\nrays, it fills its body with power."
     mondexheight SPECIES_VENUSAUR, "6’07”"
     mondexweight SPECIES_VENUSAUR, "220.5 lbs."
+
 
 
 mondata SPECIES_CHARMANDER, "Charmander"
@@ -467,7 +470,7 @@ mondata SPECIES_SPEAROW, "Spearow"
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
-    abilities ABILITY_SNIPER, ABILITY_NONE
+    abilities ABILITY_KEEN_EYE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
     mondexentry SPECIES_SPEAROW, "It flaps its short wings to flush out\ninsects from tall grass. It then\nplucks them with its stubby beak."
@@ -3208,7 +3211,7 @@ mondata SPECIES_MEW, "Mew"
 
 mondata SPECIES_CHIKORITA, "Chikorita"
     basestats 45, 49, 65, 45, 49, 65
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 0, 1
@@ -3216,20 +3219,21 @@ mondata SPECIES_CHIKORITA, "Chikorita"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Monster, Grass
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_CHIKORITA, "A sweet aroma gently wafts from\nthe leaf on its head. It is docile\nand loves to soak up sunrays."
     mondexclassification SPECIES_CHIKORITA, "Leaf Pokémon"
+    mondexentry SPECIES_CHIKORITA, "A sweet aroma gently wafts from\nthe leaf on its head. It is docile\nand loves to soak up sunrays."
     mondexheight SPECIES_CHIKORITA, "2’11”"
     mondexweight SPECIES_CHIKORITA, "14.1 lbs."
 
 
+
 mondata SPECIES_BAYLEEF, "Bayleef"
     basestats 60, 62, 80, 60, 63, 80
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 1, 0, 0, 1
@@ -3237,20 +3241,21 @@ mondata SPECIES_BAYLEEF, "Bayleef"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Monster, Grass
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_BAYLEEF, "The scent of spices comes from\naround its neck. Somehow,\nsniffing it makes you want to fight."
     mondexclassification SPECIES_BAYLEEF, "Leaf Pokémon"
+    mondexentry SPECIES_BAYLEEF, "The scent of spices comes from\naround its neck. Somehow,\nsniffing it makes you want to fight."
     mondexheight SPECIES_BAYLEEF, "3’11”"
     mondexweight SPECIES_BAYLEEF, "34.8 lbs."
 
 
+
 mondata SPECIES_MEGANIUM, "Meganium"
     basestats 80, 82, 100, 80, 83, 100
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 1, 0, 0, 2
@@ -3258,15 +3263,16 @@ mondata SPECIES_MEGANIUM, "Meganium"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Monster, Grass
     abilities ABILITY_GRASSY_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_MEGANIUM, "The aroma that rises from its\npetals contains a substance that\ncalms aggressive feelings."
     mondexclassification SPECIES_MEGANIUM, "Herb Pokémon"
+    mondexentry SPECIES_MEGANIUM, "The aroma that rises from its\npetals contains a substance that\ncalms aggressive feelings."
     mondexheight SPECIES_MEGANIUM, "5’11”"
     mondexweight SPECIES_MEGANIUM, "221.6 lbs."
+
 
 
 mondata SPECIES_CYNDAQUIL, "Cyndaquil"
@@ -3334,7 +3340,7 @@ mondata SPECIES_TYPHLOSION, "Typhlosion"
 
 mondata SPECIES_TOTODILE, "Totodile"
     basestats 50, 65, 64, 43, 44, 48
-    types TYPE_WATER, TYPE_WATER
+    types Water, Water
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 0, 0
@@ -3342,20 +3348,21 @@ mondata SPECIES_TOTODILE, "Totodile"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
+    growthrate Medium Slow
+    egggroups Monster, Water 1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_TOTODILE, "Its powerful, well-developed jaws\nare capable of crushing anything.\nEven its Trainer must be careful."
     mondexclassification SPECIES_TOTODILE, "Big Jaw Pokémon"
+    mondexentry SPECIES_TOTODILE, "Its powerful, well-developed jaws\nare capable of crushing anything.\nEven its Trainer must be careful."
     mondexheight SPECIES_TOTODILE, "2’00”"
     mondexweight SPECIES_TOTODILE, "20.9 lbs."
 
 
+
 mondata SPECIES_CROCONAW, "Croconaw"
     basestats 65, 80, 80, 58, 59, 63
-    types TYPE_WATER, TYPE_WATER
+    types Water, Water
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 1, 0, 0, 0
@@ -3363,20 +3370,21 @@ mondata SPECIES_CROCONAW, "Croconaw"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
+    growthrate Medium Slow
+    egggroups Monster, Water 1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_CROCONAW, "If it loses a fang, a new one\ngrows back in its place. There are\nalways 48 fangs lining its mouth."
     mondexclassification SPECIES_CROCONAW, "Big Jaw Pokémon"
+    mondexentry SPECIES_CROCONAW, "If it loses a fang, a new one\ngrows back in its place. There are\nalways 48 fangs lining its mouth."
     mondexheight SPECIES_CROCONAW, "3’07”"
     mondexweight SPECIES_CROCONAW, "55.1 lbs."
 
 
+
 mondata SPECIES_FERALIGATR, "Feraligatr"
     basestats 85, 105, 100, 78, 79, 83
-    types TYPE_WATER, TYPE_WATER
+    types Water, Water
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 2, 1, 0, 0, 0
@@ -3384,15 +3392,16 @@ mondata SPECIES_FERALIGATR, "Feraligatr"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_WATER_1
+    growthrate Medium Slow
+    egggroups Monster, Water 1
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_FERALIGATR, "When it bites with its massive and\npowerful jaws, it shakes its head\nand savagely tears its victim up."
     mondexclassification SPECIES_FERALIGATR, "Big Jaw Pokémon"
+    mondexentry SPECIES_FERALIGATR, "When it bites with its massive and\npowerful jaws, it shakes its head\nand savagely tears its victim up."
     mondexheight SPECIES_FERALIGATR, "7’07”"
     mondexweight SPECIES_FERALIGATR, "195.8 lbs."
+
 
 
 mondata SPECIES_SENTRET, "Sentret"
@@ -3439,7 +3448,7 @@ mondata SPECIES_FURRET, "Furret"
 
 mondata SPECIES_HOOTHOOT, "Hoothoot"
     basestats 60, 30, 30, 50, 36, 56
-    types TYPE_NORMAL, TYPE_FLYING
+    types Normal, Flying
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 1, 0, 0, 0, 0, 0
@@ -3447,15 +3456,16 @@ mondata SPECIES_HOOTHOOT, "Hoothoot"
     genderratio 127
     eggcycles 15
     basefriendship 50
-    growthrate GROWTH_MEDIUM_FAST
-    egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
+    growthrate Medium Fast
+    egggroups Flying, Flying
     abilities ABILITY_INSOMNIA, ABILITY_TINTED_LENS
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_HOOTHOOT, "It always stands on one foot.\nIt changes feet so fast,\nthe movement can rarely be seen."
     mondexclassification SPECIES_HOOTHOOT, "Owl Pokémon"
+    mondexentry SPECIES_HOOTHOOT, "It always stands on one foot.\nIt changes feet so fast,\nthe movement can rarely be seen."
     mondexheight SPECIES_HOOTHOOT, "2’04”"
     mondexweight SPECIES_HOOTHOOT, "46.7 lbs."
+
 
 
 mondata SPECIES_NOCTOWL, "Noctowl"
@@ -5371,7 +5381,7 @@ mondata SPECIES_SCEPTILE, "Sceptile"
 
 mondata SPECIES_TORCHIC, "Torchic"
     basestats 45, 60, 40, 45, 70, 50
-    types TYPE_FIRE, TYPE_FIRE
+    types Fire, Fire
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 1, 0
@@ -5379,20 +5389,21 @@ mondata SPECIES_TORCHIC, "Torchic"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    growthrate Medium Slow
+    egggroups Field, Field
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_TORCHIC, "Inside its body is a place where it\nkeeps a small flame. Hug it! It will\nbe as warm as a hot-water bottle."
     mondexclassification SPECIES_TORCHIC, "Chick Pokémon"
+    mondexentry SPECIES_TORCHIC, "Inside its body is a place where it\nkeeps a small flame. Hug it! It will\nbe as warm as a hot-water bottle."
     mondexheight SPECIES_TORCHIC, "1’04”"
     mondexweight SPECIES_TORCHIC, "5.5 lbs."
 
 
+
 mondata SPECIES_COMBUSKEN, "Combusken"
     basestats 60, 85, 60, 55, 85, 60
-    types TYPE_FIRE, TYPE_FIGHTING
+    types Fire, Fighting
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 1, 0
@@ -5400,20 +5411,21 @@ mondata SPECIES_COMBUSKEN, "Combusken"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    growthrate Medium Slow
+    egggroups Field, Field
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_COMBUSKEN, "During a battle, the hot flame in\nits body increases. Its kicks have\noutstanding destructive power."
     mondexclassification SPECIES_COMBUSKEN, "Young Fowl Pokémon"
+    mondexentry SPECIES_COMBUSKEN, "During a battle, the hot flame in\nits body increases. Its kicks have\noutstanding destructive power."
     mondexheight SPECIES_COMBUSKEN, "2’11”"
     mondexweight SPECIES_COMBUSKEN, "43.0 lbs."
 
 
+
 mondata SPECIES_BLAZIKEN, "Blaziken"
     basestats 80, 120, 70, 80, 110, 70
-    types TYPE_FIRE, TYPE_FIGHTING
+    types Fire, Fighting
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 3, 0, 0, 0, 0
@@ -5421,15 +5433,16 @@ mondata SPECIES_BLAZIKEN, "Blaziken"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    growthrate Medium Slow
+    egggroups Field, Field
     abilities ABILITY_SPEED_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_BLAZIKEN, "It can clear a 30-story building\nin a leap. Its fiery punches scorch\nits foes."
     mondexclassification SPECIES_BLAZIKEN, "Blaze Pokémon"
+    mondexentry SPECIES_BLAZIKEN, "It can clear a 30-story building\nin a leap. Its fiery punches scorch\nits foes."
     mondexheight SPECIES_BLAZIKEN, "6’03”"
     mondexweight SPECIES_BLAZIKEN, "114.6 lbs."
+
 
 
 mondata SPECIES_MUDKIP, "Mudkip"
@@ -8143,7 +8156,7 @@ mondata SPECIES_DEOXYS, "Deoxys"
 
 mondata SPECIES_TURTWIG, "Turtwig"
     basestats 55, 68, 64, 31, 45, 55
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 0, 0, 0, 0
@@ -8151,20 +8164,21 @@ mondata SPECIES_TURTWIG, "Turtwig"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Monster, Grass
     abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_TURTWIG, "Photosynthesis occurs across its\nbody under the sun. The shell on\nits back is actually hardened soil."
     mondexclassification SPECIES_TURTWIG, "Tiny Leaf Pokémon"
+    mondexentry SPECIES_TURTWIG, "Photosynthesis occurs across its\nbody under the sun. The shell on\nits back is actually hardened soil."
     mondexheight SPECIES_TURTWIG, "1’04”"
     mondexweight SPECIES_TURTWIG, "22.5 lbs."
 
 
+
 mondata SPECIES_GROTLE, "Grotle"
     basestats 75, 89, 85, 36, 55, 65
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 1, 1, 0, 0, 0
@@ -8172,20 +8186,21 @@ mondata SPECIES_GROTLE, "Grotle"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate Medium Slow
+    egggroups Monster, Grass
+    abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_GROTLE, "A GROTLE that lives in the forest\nis said to have its own secret\nspringwater."
     mondexclassification SPECIES_GROTLE, "Grove Pokémon"
+    mondexentry SPECIES_GROTLE, "A GROTLE that lives in the forest\nis said to have its own secret\nspringwater."
     mondexheight SPECIES_GROTLE, "3’07”"
     mondexweight SPECIES_GROTLE, "213.8 lbs."
 
 
+
 mondata SPECIES_TORTERRA, "Torterra"
     basestats 95, 109, 105, 56, 75, 85
-    types TYPE_GRASS, TYPE_GROUND
+    types Grass, Ground
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 2, 1, 0, 0, 0
@@ -8193,15 +8208,16 @@ mondata SPECIES_TORTERRA, "Torterra"
     genderratio 31
     eggcycles 20
     basefriendship 70
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_MONSTER, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate Medium Slow
+    egggroups Monster, Grass
+    abilities ABILITY_SHELL_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_TORTERRA, "Ancient people imagined that\nbeneath the ground, a gigantic\nTORTERRA dwelled."
     mondexclassification SPECIES_TORTERRA, "Continent Pokémon"
+    mondexentry SPECIES_TORTERRA, "Ancient people imagined that\nbeneath the ground, a gigantic\nTORTERRA dwelled."
     mondexheight SPECIES_TORTERRA, "7’03”"
     mondexweight SPECIES_TORTERRA, "683.4 lbs."
+
 
 
 mondata SPECIES_CHIMCHAR, "Chimchar"
@@ -14947,7 +14963,7 @@ mondata SPECIES_DIGGERSBY, "Diggersby"
 
 mondata SPECIES_FLETCHLING, "Fletchling"
     basestats 45, 50, 43, 62, 40, 38
-    types TYPE_NORMAL, TYPE_FLYING
+    types Normal, Flying
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 1, 0, 0
@@ -14955,15 +14971,16 @@ mondata SPECIES_FLETCHLING, "Fletchling"
     genderratio 127
     eggcycles 15
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
-    abilities ABILITY_FLAME_BODY, ABILITY_NONE
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_NONE, EGG_GROUP_NONE
+    abilities ABILITY_BIG_PECKS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_FLETCHLING, "When it’s excited, its temperature can\ndouble, spiking hormone production in\nits body."
     mondexclassification SPECIES_FLETCHLING, "Tiny Robin Pokémon"
+    mondexentry SPECIES_FLETCHLING, "When it’s excited, its temperature can\ndouble, spiking hormone production in\nits body."
     mondexheight SPECIES_FLETCHLING, "1’00”"
     mondexweight SPECIES_FLETCHLING, "3.7 lbs."
+
 
 
 mondata SPECIES_FLETCHINDER, "Flechinder"
@@ -20092,7 +20109,7 @@ mondata SPECIES_ENAMORUS, "Enamorus"
 
 mondata SPECIES_SPRIGATITO, "Sprigatito"
     basestats 40, 61, 54, 65, 45, 45
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 1, 0, 0
@@ -20100,20 +20117,21 @@ mondata SPECIES_SPRIGATITO, "Sprigatito"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
+    growthrate Medium Slow
+    egggroups Field, Grass
     abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SPRIGATITO, "The sweet scent its body gives off\nmesmerizes those around it. The scent grows\nstronger when this Pokémon is in the sun."
     mondexclassification SPECIES_SPRIGATITO, "Grass Cat Pokémon"
+    mondexentry SPECIES_SPRIGATITO, "The sweet scent its body gives off\nmesmerizes those around it. The scent grows\nstronger when this Pokémon is in the sun."
     mondexheight SPECIES_SPRIGATITO, "1’04”"
     mondexweight SPECIES_SPRIGATITO, "9.0 lbs."
 
 
+
 mondata SPECIES_FLORAGATO, "Floragato"
     basestats 61, 80, 63, 83, 60, 63
-    types TYPE_GRASS, TYPE_GRASS
+    types Grass, Grass
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 2, 0, 0
@@ -20121,20 +20139,21 @@ mondata SPECIES_FLORAGATO, "Floragato"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate Medium Slow
+    egggroups Field, Grass
+    abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_FLORAGATO, "Floragato deftly wields the vine hidden\nbeneath its long fur, slamming the hard\nflower bud against its opponents."
     mondexclassification SPECIES_FLORAGATO, "Grass Cat Pokémon"
+    mondexentry SPECIES_FLORAGATO, "Floragato deftly wields the vine hidden\nbeneath its long fur, slamming the hard\nflower bud against its opponents."
     mondexheight SPECIES_FLORAGATO, "2’11”"
     mondexweight SPECIES_FLORAGATO, "26.9 lbs."
 
 
+
 mondata SPECIES_MEOWSCARADA, "Mewscarada"
     basestats 76, 110, 70, 123, 81, 70
-    types TYPE_GRASS, TYPE_DARK
+    types Grass, Dark
     catchrate 45
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 3, 0, 0
@@ -20142,15 +20161,16 @@ mondata SPECIES_MEOWSCARADA, "Mewscarada"
     genderratio 31
     eggcycles 20
     basefriendship 50
-    growthrate GROWTH_MEDIUM_SLOW
-    egggroups EGG_GROUP_FIELD, EGG_GROUP_GRASS
-    abilities ABILITY_OVERGROW, ABILITY_NONE
+    growthrate Medium Slow
+    egggroups Field, Grass
+    abilities ABILITY_PROTEAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_MEOWSCARADA, "With skillful misdirection, it rigs foes with\npollen-packed flower bombs, and sets them\noff before its foes realize what’s going on."
     mondexclassification SPECIES_MEOWSCARADA, "Magician Pokémon"
+    mondexentry SPECIES_MEOWSCARADA, "With skillful misdirection, it rigs foes with\npollen-packed flower bombs, and sets them\noff before its foes realize what’s going on."
     mondexheight SPECIES_MEOWSCARADA, "4’11”"
     mondexweight SPECIES_MEOWSCARADA, "68.8 lbs."
+
 
 
 mondata SPECIES_FUECOCO, "Fuecoco"
