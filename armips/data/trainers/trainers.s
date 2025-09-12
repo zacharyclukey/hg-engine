@@ -957,7 +957,7 @@ trainerdata 20, "Falkner"
         // mon 0
         ivs 255
         abilityslot 0
-        level 13
+        level 12
         pokemon SPECIES_WINGULL
         item ITEM_DAMP_ROCK
         move MOVE_RAIN_DANCE
@@ -973,7 +973,7 @@ trainerdata 20, "Falkner"
         // mon 1
         ivs 255
         abilityslot 0
-        level 13
+        level 12
         pokemon SPECIES_TAILLOW
         item ITEM_FLAME_ORB
         move MOVE_WING_ATTACK
@@ -1005,7 +1005,7 @@ trainerdata 20, "Falkner"
         // mon 3
         ivs 255
         abilityslot 0
-        level 14
+        level 13
         pokemon SPECIES_GLIGAR
         item ITEM_QUICK_CLAW
         move MOVE_KNOCK_OFF
@@ -1042,7 +1042,7 @@ trainerdata 20, "Falkner"
         item ITEM_SITRUS_BERRY
         move MOVE_HYPNOSIS
         move MOVE_CONFUSION
-        move MOVE_HURRICANE
+        move MOVE_AIR_SLASH
         move MOVE_PROTECT
         ability ABILITY_TINTED_LENS
         setivs 31,31,31,31,31,31
@@ -14386,7 +14386,7 @@ trainerdata 290, "Li"
         abilityslot 0
         level 10
         pokemon SPECIES_LILEEP
-        item ITEM_HARD_STONE
+        item ITEM_ORAN_BERRY
         move MOVE_ACID
         move MOVE_CONSTRICT
         move MOVE_INGRAIN
