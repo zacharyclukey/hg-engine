@@ -14390,7 +14390,7 @@ trainerdata 290, "Li"
         move MOVE_ACID
         move MOVE_CONSTRICT
         move MOVE_INGRAIN
-        move MOVE_ANCIENT_POWER
+        move MOVE_CONFUSE_RAY
         ability ABILITY_SUCTION_CUPS
         setivs 31,31,31,31,31,31
         setevs 0, 0, 0, 0, 0, 0
